@@ -22,4 +22,19 @@ public class Granat extends PreciousStone{
     public void setGranatUnderType(String granatUnderType) {
         this.granatUnderType = granatUnderType;
     }
+
+    public String toString(){
+        StringBuilder result = new StringBuilder();
+        /*carat;
+    private String colour;
+    private double solidity;//tverdost'
+    private double density;//plotnost'
+    private double price;*/
+        result.append("Granat: Granat type-"+getGranatType()+", Granat undertype- "+getGranatUnderType());
+        result.append(", colour- "+getColour()+", syngony- "+getSyngony());
+        result.append(", solidity- "+getSolidity()+", density- "+getDensity());
+        result.append(", weight- "+getCarat()+" carat, average price per carat- ");
+        result.append(getPrice()+"$.");
+        return result.toString();
+    }
 }

@@ -1,0 +1,6 @@
+Biryuza green white 5 2.6 low 20 30
+Corund Rubin dark-red thrigonal 9 3.99 25 1000000
+Diamond adamant white cubic 10 3.47 5 15000
+Granat Demantoid rare green unstable 6.5 3.84 30 2000
+Halczedon Onix dark glass 6 2.65 100 50
+Kvartz smoky greyish-brown thrigonal 7 2.52 500 48
