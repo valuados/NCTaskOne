@@ -40,5 +40,6 @@ public class Main {
         System.out.println("\n Sorted by general cost:");
         necklace.sortByCost();
         System.out.println(necklace.toString());
+        System.out.println(necklace.showInThePriceRange(600, 100000));
     }
 }

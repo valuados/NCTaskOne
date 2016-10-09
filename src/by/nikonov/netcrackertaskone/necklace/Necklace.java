@@ -42,6 +42,22 @@ public class Necklace {
         Collections.sort(necklace, new CostComparator());
     }
 
+    public String showInThePriceRange(double min, double max){
+        int i=0;
+        StringBuilder result=new StringBuilder();
+
+        this.sortByCost();
+        result.append("Necklace with price range from "+ min +"$ to "+max+"$:");
+        while (necklace.get(i).getCarat()*necklace.get(i).getPrice()>=min &&
+                necklace.get(i).getCarat()*necklace.get(i).getPrice()<=max && i<necklace.size()){
+            double cost = necklace.get(i).getCarat()*necklace.get(i).getPrice();
+            result.append("Price: "+ cost +"$"+'\n');
+            result.append(necklace.get(i).toString()+ '\n');
+            i++;
+        }
+        return result.toString();
+    }
+
     @Override
     public String toString(){
         StringBuilder result = new StringBuilder();
