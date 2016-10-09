@@ -10,7 +10,7 @@ import java.util.Comparator;
 public class CaratComparator implements Comparator<Stone> {
     @Override
     public int compare(Stone a, Stone b) {
-        return a.getCarat() < b.getPrice()*b.getCarat() ?
+        return a.getCarat() < b.getCarat() ?
                 -1 : a.getCarat() == b.getCarat() ? 0 : 1;
     }
 }

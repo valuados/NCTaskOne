@@ -35,11 +35,10 @@ public class Necklace {
         this.necklace.add(stone);
     }
 
-    public void SortByCarat(){
-        Collections.sort(necklace, new CaratComparator());
+    public void sortByCarat(){ Collections.sort(necklace, new CaratComparator());
     }
 
-    public void SortByCost(){
+    public void sortByCost(){
         Collections.sort(necklace, new CostComparator());
     }
 

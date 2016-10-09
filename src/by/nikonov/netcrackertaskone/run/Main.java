@@ -34,5 +34,11 @@ public class Main {
             e.printStackTrace();
         }
         System.out.println(necklace.toString());
+        System.out.println("\n Sorted by weight:");
+        necklace.sortByCarat();
+        System.out.println(necklace.toString());
+        System.out.println("\n Sorted by general cost:");
+        necklace.sortByCost();
+        System.out.println(necklace.toString());
     }
 }

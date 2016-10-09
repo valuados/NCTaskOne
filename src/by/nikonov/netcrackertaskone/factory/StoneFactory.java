@@ -61,6 +61,7 @@ public class StoneFactory {
             granat.setDensity(scanner.nextDouble());
             granat.setCarat(scanner.nextDouble());
             granat.setPrice(scanner.nextDouble());
+            return granat;
 
 
         }else if(stoneType.equalsIgnoreCase("HALCZEDON")){
