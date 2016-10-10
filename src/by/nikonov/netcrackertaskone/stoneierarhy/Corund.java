@@ -16,15 +16,9 @@ public class Corund extends PreciousStone {
 
     public String toString(){
         StringBuilder result = new StringBuilder();
-        /*carat;
-    private String colour;
-    private double solidity;//tverdost'
-    private double density;//plotnost'
-    private double price;*/
-        result.append("Corund: corund type-"+getCorundType()+", Colour- "+getColour()+", syngony- "+getSyngony());
-        result.append(", solidity- "+getSolidity()+", density- "+getDensity());
-        result.append(", weight- "+getCarat()+" carat, average price per carat- ");
-        result.append(getPrice()+"$.");
+        result.append("Corund: corund type-")
+                .append(corundType)
+                .append(super.toString());
         return result.toString();
     }
 }

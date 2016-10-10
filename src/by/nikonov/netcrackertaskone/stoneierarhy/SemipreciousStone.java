@@ -15,4 +15,17 @@ public class SemipreciousStone extends Stone {
     public void setColorFeatures(String colorFeatures) {
         this.colorFeatures = colorFeatures;
     }
+
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        /*carat;
+    private String colour;
+    private double solidity;//tverdost'
+    private double density;//plotnost'
+    private double price;*/
+        result.append(", colour features- ")
+                .append(colorFeatures)
+                .append(super.toString());
+        return result.toString();
+    }
 }

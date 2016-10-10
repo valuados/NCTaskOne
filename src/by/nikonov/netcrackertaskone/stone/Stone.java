@@ -6,8 +6,8 @@ package by.nikonov.netcrackertaskone.stone;
 public abstract class Stone {
     private double carat;
     private String colour;
-    private double solidity;//tverdost'
-    private double density;//plotnost'
+    private double solidity;
+    private double density;
     private double price;
 
     public double getPrice() {
@@ -48,5 +48,21 @@ public abstract class Stone {
 
     public void setDensity(double density) {
         this.density = density;
+    }
+
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        result.append(", colour- ")
+                .append(colour)
+                .append(", solidity- ")
+                .append(solidity)
+                .append(", density- ")
+                .append(density)
+                .append(", weight- ")
+                .append(carat)
+                .append(" carat, average price per carat- ")
+                .append(getPrice())
+                .append("$.");
+        return result.toString();
     }
 }

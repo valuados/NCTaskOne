@@ -10,7 +10,7 @@ import java.util.Scanner;
  */
 public class StoneFactory {
 
-    public Stone getStone(String stoneType, Scanner scanner){
+    public static Stone getStone(String stoneType, Scanner scanner){
         if(stoneType == null){
             return null;
         }

@@ -58,6 +58,14 @@ public class Necklace {
         return result.toString();
     }
 
+     public double countWeight(){
+        return necklace.stream().mapToDouble(Stone::getCarat).sum();
+     }
+
+    public double countPrise(){
+        return necklace.stream().mapToDouble(Stone::getPrice).sum();
+    }
+
     @Override
     public String toString(){
         StringBuilder result = new StringBuilder();

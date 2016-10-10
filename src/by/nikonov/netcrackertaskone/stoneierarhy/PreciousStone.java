@@ -15,4 +15,12 @@ public class PreciousStone extends Stone {
     public void setSyngony(String syngony) {
         this.syngony = syngony;
     }
+
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        result.append(", syngony- ")
+                .append(syngony)
+                .append(super.toString());
+        return result.toString();
+    }
 }

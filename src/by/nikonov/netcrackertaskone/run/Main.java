@@ -15,7 +15,6 @@ public class Main {
     public static void main(String[] args) {
 
         File file = new File("src/by/nikonov/netcrackertaskone/files/text.txt");
-        StoneFactory stoneFactory = new StoneFactory();
         Necklace necklace = new Necklace();
 
         try {
@@ -24,7 +23,7 @@ public class Main {
 
 
             while (sc.hasNext()) {
-                Stone stone = stoneFactory.getStone(sc.next(),sc);
+                Stone stone = StoneFactory.getStone(sc.next(),sc);
                 necklace.setNecklace(stone);
 
             }
@@ -34,6 +33,8 @@ public class Main {
             e.printStackTrace();
         }
         System.out.println(necklace.toString());
+        System.out.println("Current necklace price in $:"+ necklace.countPrise());
+        System.out.println("Current necklace weight in carats:"+ necklace.countWeight());
         System.out.println("\n Sorted by weight:");
         necklace.sortByCarat();
         System.out.println(necklace.toString());
