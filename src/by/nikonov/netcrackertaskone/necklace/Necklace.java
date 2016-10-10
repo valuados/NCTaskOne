@@ -47,7 +47,7 @@ public class Necklace {
         StringBuilder result=new StringBuilder();
 
         this.sortByCost();
-        result.append("Necklace with price range from "+ min +"$ to "+max+"$:");
+        result.append("Necklace with price range from "+ min +"$ to "+max+"$:\n");
         while (necklace.get(i).getCarat()*necklace.get(i).getPrice()>=min &&
                 necklace.get(i).getCarat()*necklace.get(i).getPrice()<=max && i<necklace.size()){
             double cost = necklace.get(i).getCarat()*necklace.get(i).getPrice();
