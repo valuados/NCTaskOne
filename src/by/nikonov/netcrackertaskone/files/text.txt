@@ -5,4 +5,3 @@ Granat Demantoid rare green unstable 6.5 3.84 30 2000
 Halczedon Onix dark glass 6 2.65 100 50
 Kvartz smoky greyish-brown thrigonal 7 2.52 500 48
 Corund Sapfir dark-blue cubic 9 4.05 11 6000
-
